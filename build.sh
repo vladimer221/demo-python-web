@@ -10,15 +10,11 @@ echo "Installing dependencies"
 pip install -r requirements.txt
 
 echo "Starting application"
-python app/app.py &
-APP_PID=$!
+nohup python3 app/app.py > app.log 2>&1 &
 
 sleep 3
 
 echo "Running test"
 pytest test
-
-echo "Stopping application"
-kill $APP_PID
 
 echo "Build finished successfully"
