@@ -15,8 +15,8 @@ APP_PID=$!
 
 sleep 3
 
-echo "Running tests"
-pytest tests
+echo "Running test"
+pytest test
 
 echo "Stopping application"
 kill $APP_PID
