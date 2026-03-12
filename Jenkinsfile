@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone project') {
             steps {
-                git 'https://github.com/example/demo-python-web.git'
+                git 'https://github.com/vladimer221/demo-python-web.git'
             }
         }
 
